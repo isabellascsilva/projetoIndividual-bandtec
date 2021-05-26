@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTATO</title>
-    <link rel="stylesheet" href="stylecontato.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\stylecontato.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="shortcut icon" href="../Algoritmo/imagem/aoalcance.jpg">
 </head>
 <body>
         <!--header inicio-->
@@ -18,7 +19,7 @@
                         <li><a href="home.html">Home</a></li>                 
                         <li><a href="voluntario.html">Seja um voluntário</a></li>
                         <li><a href="" class="current">Contato</a></li>  
-                        <li><a href="cadastro.html">Cadastro</a></li>
+                        <li><a href="doe.html">DOE</a></li>
                         <li><a href="login.html">Login</a></li>
                     </ul>
                 </div>
@@ -26,6 +27,7 @@
         </div>
 
         <!--Começo de Contato-->
+        <form  id="form_contato" method="post" onsubmit="return cadastrarContato()">
         <div class="contato">
             <div class="container">
                 <div class="titulo-contato">
@@ -34,25 +36,42 @@
                 </h1>
                 <p class="paragrafo">Entre me contato conostro através do formulário</p>
                 <div class="input-forac">
+                    
                     Nome<br>
-                    <input class="input_contato" type="text" id="input_contato_nome"><br>
+                    <input name="nomeContato" class="input_contato" type="text" id="input_contato_nome"><br>
                     Telefone<br>
-                    <input class="input_contato" type="text" id="input_contato_tel"><br>
+                    <input name="telefone" class="input_contato" type="text" id="input_contato_tel"><br>
                     E-mail<br>
-                    <input class="input_contato" type="text" id="input_contato_email"><br>
+                    <input name="emailContato" class="input_contato" type="text" id="input_contato_email"><br>
                     Assunto<br>
-                    <input class="input_contato" type="text" id="input_contato_assunto"><br>
+                    <input  name="assunto" class="input_contato" type="text" id="input_contato_assunto"><br>
                     Mensagem<br>
-                    <input class="input_msg" type="text" id="input_contato_msg"><br>
+                    <textarea name="mensagem" class="input_msg" type="text" id="input_contato_msg"></textarea><br>
+                    
+                    Como chegou até nós?<br>
+                    <select name="comoAchou" class="indicacao" id="select-indicacao">
+                        <option value="vazio"></option>
+                        <option value="indicacaoA">Indicação de Amigos</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="brecho">Brechó Iris</option>
+                        <option value="outros">Outros</option>
+                    </select><br>
+
+                    <div class="display">
+                        <div >
+                            <button class="botao">Enviar</button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
             <div class="botao-seja">
                 <div class="container">
                     <div class="cliqueaqui">
-                            <button class="button-contato-volu">Seja voluntário, clique aqui!</button>
+                            <button class="button-contato-volu"> Seja voluntário, clique aqui!</a></button>
                     </div>
                     <div class="endereco">
                         <h1>Endereço</h1>
@@ -63,7 +82,7 @@
                     </p>
                     </div>
                     <div class="icones">
-                        <img class="icons" src="https://cdn.icon-icons.com/icons2/1129/PNG/512/facebookblacksocialbuttoncircle_79771.png">
+                        <a href="https://www.facebook.com/Ao-alcance-de-todos-1855788984668444"><img class="icons" src="https://cdn.icon-icons.com/icons2/1129/PNG/512/facebookblacksocialbuttoncircle_79771.png"></a>
                         <img class="icons" src="https://lh3.googleusercontent.com/proxy/djkWdDZ-BnPRRVSclIX2l1mU9maTwYfmSTewfI8WcGMF4vrP4wA1-gBSB9-Prhzj1kcCH4mIq4T8yvk_fay6P0675-6x9ZN22hl-4JJ7cbVsfwHknSZZ0j06upzvtE38X5dH-CYlgbOsOLA">
                         <img class="icons" src="https://cdn.icon-icons.com/icons2/2428/PNG/512/whatsapp_black_logo_icon_147050.png">
                     </div>
@@ -96,6 +115,16 @@
                     <button class="botao">
                         <a href="cadastro.html" >CADASTRAR</a>
                     </button>
+
+                    <p class="paragrafo-footer"><span>ENDEREÇO AADT</span><br> Avenida Raimundo Pereira de Magalhaes 1720 - São Paulo - Pirituba</p>
+                    <p>Siga-nos nas redes sociais</p>
+                    <div class="icones">
+                        <img class="icons" src="https://capella.art.br/wp-content/uploads/2018/11/facebook-icon.png">
+                        <img class="icons" src="">
+                        <img class="icons" src="">
+                    </div>
+
+
             </div>
             </div>
         </div>
@@ -103,3 +132,33 @@
         <!--Fim footer-->
 </body>
 </html>
+
+<script>
+
+    // function cadastrarContato() {
+    
+            
+    // var formulario = new URLSearchParams(new FormData(form_contato));
+    // fetch("/usuarios/cadastrarContato", {
+    //     method: "POST",
+    //     body: formulario
+    // }).then(function (response) {
+        
+    //     if (response.ok) {
+    
+    //         window.location.href='login.html';
+    
+    //     } else {
+    
+    //         console.log('Erro de solicitação!');
+    //         response.text().then(function (resposta) {
+               
+    //         });
+            
+    //     }
+    // });
+    
+    // return false;
+    // }
+    
+    </script>

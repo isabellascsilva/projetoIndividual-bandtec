@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEJA UM VOLUNTÁRIO</title>
-    <link rel="stylesheet" href="stylevoluntario.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\stylevoluntario.css">
+    <link rel="shortcut icon" href="../Algoritmo/imagem/aoalcance.jpg">
 </head>
 <body>
         <!--header inicio-->
@@ -18,7 +19,7 @@
                         <li><a href="home.html">Home</a></li>                 
                         <li><a href="" class="current">Seja um voluntário</a></li>
                         <li><a href="contato.html">Contato</a></li> 
-                        <li><a href="cadastro.html" >Cadastro</a></li>
+                        <li><a href="doe.html">DOE</a></li>
                         <li><a href="login.html" >Login</a></li>
                     </ul>
                 </div>
@@ -34,18 +35,21 @@
                 <h1>
                     Seja um voluntario
                 </h1>
+                <p>Por favor, responda o questionário utilizando o formulário abaixo. Todos os campos marcados com (*) são de preenchimento obrigatório.</p>
                 <div class="input-forav">
                     Nome *<br>
                     <input class="input-v" id="input_volun_nome"><br>
-                    Telefone de Contato<br>
+                    Telefone de Contato*<br>
                     <input class="input-v"  id="input_volu_contato"><br>
-                    Email<br>
+                    Email*<br>
+                    <input class="input-v"  id="input_volu_email"><br>
+                    Senha*<br>
                     <input class="input-v"  id="input_volu_email"><br>
                     Você é maior de 18 anos?<br>
                     <input type="checkbox" value="sim">Sim
                     <input type="checkbox" value="nao">Não<br><br>
                     O que você espera como voluntário(a) da AADT? *<br>
-                    <input class="input-v"  id="input_volu_espera"><br>
+                    <textarea class="input-v"  id="input_volu_espera"></textarea><br>
                     Como você gostaria de ajudar o AADT?<br>
                     <input class="input-v"  id="input_volu_ajuda"><br>
                     Nós saímos de final de semana, você teria disponibilidade?

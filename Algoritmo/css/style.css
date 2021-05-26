@@ -9,13 +9,15 @@ body {
 }
 
 .container { 
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
 h1 {
     margin: 0;
     padding: 0;
+    color: black;
+
 }
 
 a {
@@ -73,6 +75,9 @@ a {
     width: 100%;
     height: 400px;
     background-color: salmon;
+    background-image: url('../imagem/AO\ ALCANCE\ DE\ TODOS\ \(5\).png');
+    background-size:cover;
+
 }
 .banner .texto{
     padding-top: 180px;
@@ -93,38 +98,52 @@ a {
 .projeto{
     width: 100%;
     height: 400px;
-    background-color:burlywood ;
     padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
 }
 
 .titulo{
     color: black;
     font-size: 60px;
-    width: 100%;
+    width: 50%;
     text-align: center;
+    padding-bottom: 15px;
 
 }
 
 .texto-projeto{
-    font-size: 15px;
+    font-size: 17px;
     color: black;
-    padding-top: 15px;
-    width: 100%;
-    float: left;
-    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+    text-align: center;
+    width: 50%;
+    height: 280px;
+    display: inline-flex;
+    box-shadow:  3px 3px 5px 2px #ccc;
+    border-radius: 20px;
+    
 }
 
-.imagem{
-    width: 400px;
+.img-home1{
+    width: 500px;
     height: 300px;
     align-items: center;
     float: right;
 }
 
+.linha{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    display: inline-flex;
+}
+
 .somos{
     width: 100%;
     height: 300px;
-    background-color:cornflowerblue;
 }
 
 .somos h1{
@@ -141,17 +160,34 @@ a {
     text-align: justify;
 }
 
+.texto-somos{
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .imagem-final{
     width: 100%;
-    height: 400px;
-    background-color: blanchedalmond; 
+    height: 600px;
+    background-color: white
 }
 
 .titulo-imagem{
     font-size: 40px;
     color: black;
     padding-top: 15px;
+    padding-bottom: 20px;
     text-align: center;
+
+}
+
+.imagem-final .container{
+    width: 90%;
+}
+ 
+.img-home{
+   width: 300px; 
+   height: 200px;
 
 }
 

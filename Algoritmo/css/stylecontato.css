@@ -1,11 +1,12 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: museo-sans-rounded;
     font-weight: lighter;
     padding: 0;
         /* SÓ COLOCAR QUANDO COLOCAR COR NO HEADER */
     margin: 0;
         /* SÓ COLOCAR QUANDO COLOCAR COR NO HEADER */
         /*background-color: red;*/
+        background-color: #ecf0f1;
 }
 
 .container { 
@@ -68,34 +69,104 @@ a {
     color: white;
 }
 
-.sejavoluntario .container{
+.contato .container{
     width: 70%;
 }
-.titulo-container h1{
+
+.titulo-contato h1{
     color: black;
     font-size: 40px;
-    padding-top: 50px;
-    margin-top: 60px;
+    padding-top: 60px;
+    margin-top: 50px;
     margin-left: 40px;
 }
-
-
-.input-forav{
-    margin-bottom: 10px;
-    padding: 40px;
+.paragrafo{
+    color: black;
+    font-size: 15px;
+    margin-left: 40px; 
 }
 
-.input-v{
-    width: 800px;
+.contato{
+    padding-bottom: 40px;
+}
+
+.input-forac{
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-left: 40px;
+
+}
+
+.input_contato{
+    width: 500px;
     height: 30px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     margin-top: 4px;
 }
 
+.input_msg{
+    width: 500px;
+    height: 150px;
+    line-height: normal;
+    box-sizing: border-box;
+    min-height: 100px;
+    resize: vertical;
+    overflow: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 .button-enviar{
-    width: 150px;
+    width: 120px;
     height: 50px;
     color: white;
     background-color: black;
     cursor: pointer;
+    margin-top: 15px;
+}
+
+.button-contato-volu{
+    width: 250px;
+    height: 50px;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.botao-seja .container{
+    width: 70%;
+}
+
+.indicacao{
+    width: 200px;
+}
+
+.botao-seja h1{
+    margin-top: 40px;
+}
+
+.p-endereco{
+    width: 300px;
+}
+
+.icones{
+    width: 400px;
+    padding-top: 10px;
+}
+
+.icons{
+    width: 40px;
+    height: 40px;
+}
+
+.indicacao{
+    margin-top: 10px;
+}
+
+.paragrafo-footer{
+    font-size: 15px;
+    padding-top: 5px;
+
 }

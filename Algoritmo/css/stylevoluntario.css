@@ -6,6 +6,7 @@ body {
     margin: 0;
         /* SÓ COLOCAR QUANDO COLOCAR COR NO HEADER */
         /*background-color: red;*/
+        background-color: #ecf0f1;
 }
 
 .container { 
@@ -16,7 +17,6 @@ body {
 h1 {
     margin: 0;
     padding: 0;
-    color: salmon;
 }
 
 a {
@@ -69,3 +69,38 @@ a {
     color: white;
 }
 
+.sejavoluntario{
+    background-color: #ecf0f1;
+}
+
+.sejavoluntario .container{
+    width: 70%;
+}
+.titulo-container h1{
+    color: black;
+    font-size: 40px;
+    padding-top: 50px;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+
+.input-forav{
+    margin-bottom: 10px;
+    padding: 40px;
+}
+
+.input-v{
+    width: 800px;
+    height: 30px;
+    margin-bottom: 5px;
+    margin-top: 4px;
+}
+
+.button-enviar{
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
